@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} {% endblock %}</title>
+    {% include 'website/css_links.html'%}
+
+</head>
+
+<body>
+    {% include 'website/header.html'%}
+    {% include 'website/preloader_activate.html'%}
+
+    {% block content %} {% endblock %}
+
+
+
+
+
+
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    {% include 'website/footer.html'%}
+    {% include 'website/js_links.html'%}
+</body>
+
+</html>

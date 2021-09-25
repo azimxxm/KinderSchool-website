@@ -1,0 +1,81 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %} Class page {% endblock %}
+
+{% block content %}
+<main>
+
+    <section class="slider-area slider-area2">
+        <div class="slider-active">
+
+            <div class="single-slider slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-11 col-md-12">
+                            <div class="hero__caption hero__caption2">
+                                <h1 data-animation="bounceIn" data-delay="0.2s">Classes</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="class-offer-area section-padding40 ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-11">
+
+                    <div class="section-tittle text-center mb-80">
+                        <h2>Classes We Offer</h2>
+                        <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our
+                            let god
+                            moving today. Moving in fourth air night bring upon lesser subdue.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for class in class_blog %}
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="properties pb-30">
+                        <div class="properties__card">
+                            <div class="properties__img">
+                                <a href="#"><img
+                                        src="{{ class.image.url }}"
+                                        alt=""></a>
+                                <div class="img-text">
+                                    <span class="open">Admission Closed</span>
+                                </div>
+                            </div>
+                            <div class="properties__caption">
+                                <h3><a href="#">{{ class.class_name }}</a></h3>
+                                <p>{{ class.class_type }}</p>
+                            </div>
+                            <div class="properties__footer d-flex justify-content-between align-items-center">
+                                <div class="class-day">
+                                    <span class="color-font4">{% for age_grupp in class.age_grupp.all %} {{ age_grupp }} {% endfor %}</span>
+                                    <p>Age Group</p>
+                                </div>
+                                <div class="class-day">
+                                    <span class="color-font2">{{ class.number_of_classes }}</span>
+                                    <p>Classes</p>
+                                </div>
+                                <div class="class-day">
+                                    <span class="color-font1"> {{ class.class_price }} USD</span>
+                                    <p>Class Price</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

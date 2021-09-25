@@ -1,0 +1,64 @@
+{% load static %}
+<header>
+
+    <div class="header-area">
+        <div class="main-header ">
+            <div class="header-top d-none d-sm-block">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                <div class="header-info-left">
+                                    <ul>
+                                        <li><i class="fas fa-map-marker-alt"></i> 57/A, Green Lane, NYC</li>
+                                        <li><i class="fas fa-phone-alt"></i> +10 (78) 367 3692</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+                                    <ul class="header-social">
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom  header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="{% url 'Home' %}"><img
+                                        src="data:image/webp;base64,UklGRsoEAABXRUJQVlA4TL0EAAAvvcAIEAfCqG0kSe7ueS7YBbgYls9dNBi0jeTIc18ZPH9Cz6cPo0iSpFT3axf8e0EGbm4ox7Vtq0mmnvvinow8uEOvdEAX2oi7wwgCmLNrLV+DhplWBRJlxSF8yGu4IidwhAUKv8pkO/Yf3IJbpZf6PVc85ss+M8vgrewLL+GJT80DR8toH47bs19Y44dR+Sc6IkQUogxRASoSSEElhOP93P4BQVz1BKnE/Jsu5E05lBJQdfrPvc/4V9fFAx4Girbtqmq24A4f7lZvcffC+z8WJDn30vZ32YnovwO3kSQlzS43hGJneuAJ9HdyPTz17+B23lzoN6ceDQCGE+DNt+Fybbb/TQhqOMFHnztMJ5j26WkCYOzXdrM2M8P3rLLdVfJjAuCVKbzcFD44+LFU6jVY6Y6ag4k8Pp9ZWuj/8F2+BqD1FTyO2TZgKvbys2l+AQ98swdh+xtLf8i3R/oiNpfvTLnnH8f2OsCHEexjgGucNsBUPX7P27kdNjqb2WpthtmGWezmNvuk42K9OLAkw4mUxYOBRDqVDHDPaDJlUQolUxYjwFKWDFE0k7VEgPLN7o1606zE72vVbx4tPv/lm9aqXF2alq/qTNXNbgojMQu+jZjRUB7IxxV77lLhMmMKJvrOp5nZYs48DoRAIgsAOfZKMQIQyjCTdAoAIhTKAsgwCSQqNbWqhF5LsegQwLQaHS5S0Bir94oX4kZKjXkr2isRCS5L1WNL2KgacwTSWaU4oZzLJKxapMo6Rr2G0BApObSQV1Ce4QMMCMBp7Waue6zODg7gl1UCfPNKwklT16hXncA4yuYPGOGyciNCWu6W/MzBOZx1k8j6IljVU+qJkBr5Bj9z07wLozfjAlPCkYWx2MEkB3mkgr3HTLA8bY77k8goEY7mREaBLDexpIt0JByNRwjlPPueu3mzKrWVcdXirVPQznfqfETe4cqoT2LeMJHM4gLYQrDgWcmROBec+SfIKKNMZBTJAkCUgLiDoLcX6irtvsNlOAU5b6Do7yHutYsYXDsCsBWYq3auBsQSCROAFM/I2BdMAAIOyBuu4xN5AXNqiAd7eCFPPHng6JHV2Tvpb0C9qtN0QANx8g+/IqY4gE0fmJuZse6oI7KyACHKMxJvECLg1z2oy4ZpxrqjL5Qm74+tmAog5md1BIpyIAZVJq7MDUHeM2NhbuSdbo8AtISCKH+gL1eHvjivXaXMfseNnQ6r5cVJMOuoGCGlmHimIA7QZo+KTKBbLFupXW/0POJemQ99gZ0bLHWPg3vZ+MtNKOcbZZFSJOgtHm1veMgGfV/g4OZT91h4WPQmnCDqE5GHiKSi0/WGh1+kU3rSV4cvynpxrC+wFmyWYIuWlcZMsNJC4A0ynVRWhxF+MZfhHYeRU6l2lR1KdY2WSLFLylgsKP8GyNM7AXbdXhxG72NmAgCbw2K93NF+ZcsjEzkfVvL6hce6OKopBKIxi1BcAcF4OptJBEOpLJIBuhlloqoneoUmvxlAtV2X128enfp1+DG5SqOGVs/LPzFfUxvbHTfmUSkaVrv9V/21kb8+mH5W6TcnQvLXRZh+U8s9N2ToN7figt/oc4TVthKl3+AKpeS9YfptrlAsZZb4rrcCAA=="
+                                        alt="images" data-pagespeed-url-hash="2967559676"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="{% url 'Home' %}">Home</a></li>
+                                        <li><a href="{% url 'Class' %}">Class</a></li>
+                                        <li><a href="{% url 'About' %}">About</a></li>
+                                        <li><a href="{% url 'Contact' %}">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
