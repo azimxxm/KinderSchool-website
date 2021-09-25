@@ -1,6 +1,9 @@
 ## KinderSchool-website
-<a href="#Mobile">Mobile verion view</a>
-<a href="#Desktop">Desktop verion view</a>
+
+* <a href="#Mobile">Mobile verion view</a>
+
+* <a href="#Desktop">Desktop verion view</a>
+<a id="home"></a>
 * __info__
 Today, great conditions are being created for the education of our future youth. Private kindergartens and schools are also opening My job is to create a website for a private kindergarten, I created it using __HTML CSS JavaScript Python__. Its back was in the Django frame of the Python programming language library
 
@@ -93,3 +96,5 @@ py manage.py runserver
 <div id="Mobile"></div>
 
 ![mobile 1](https://user-images.githubusercontent.com/76002783/134766035-f5d1ad6b-0591-4931-aeff-cf595ac86140.PNG) | ![mobile 2](https://user-images.githubusercontent.com/76002783/134766038-5b014961-a350-4a5a-aec2-e1a4f460a62e.PNG) | ![mobile 3](https://user-images.githubusercontent.com/76002783/134766042-df0fc825-4b87-4a6f-9b06-e2ddba962c75.PNG) | ![mobile](https://user-images.githubusercontent.com/76002783/134766044-367e1f6b-3f36-4072-b184-cfce4c7d0cdb.PNG)
+
+* <a href="#home">⬆️</a>
